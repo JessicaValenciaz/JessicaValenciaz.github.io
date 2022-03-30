@@ -91,6 +91,8 @@
             '<h1>Hi</h1>'+
             '<h2>Do You want to know me more?</h2>'+
            '<h4>I love reading Webtoon</h4>'+
+           '<h4>I love Kpop</h4>'+
+           '<h4>I love watching random movie in Youtube</h4>'+
            '<h4>Music is my life</h4>'
     ]
     
@@ -110,7 +112,7 @@
     <div id="Resume" class="tab" onclick="openPage('#F5EEF8', dataresume, 'Resume')">Resume</div>
     <div id="Education" class="tab" onclick="openPage('#FEF5E7', dataedu, 'Education')">Education</div>
     <div id="Interest" class="tab" onclick="openPage('#EAFAF1', datainter, 'Interest')">Interest</div>
-     <div id="Sosmed" class="tab" onclick="openPage('#EAFAF1', datasosmed, 'Sosmed')">Sosmed/div>
+     <div id="Sosmed" class="tab" onclick="openPage('#EAFAF1', datasosmed, 'Sosmed')">Sosmed</div>
 
     
    
@@ -143,11 +145,18 @@
             document.querySelector('#Sosmed').style.color = '#aaaaaa';
 
         }
-        else {
-            document.querySelector('#Interest').style.color = '#000000';
+        else if (click == 'Interest'){
             document.querySelector('#Education').style.color = '#aaaaaa';
             document.querySelector('#Resume').style.color = '#aaaaaa';
+            document.querySelector('#Interest').style.color = '#000000';
             document.querySelector('#Sosmed').style.color = '#aaaaaa';
+
+        }
+        else {
+            document.querySelector('#Interest').style.color = '#aaaaaa';
+            document.querySelector('#Education').style.color = '#aaaaaa';
+            document.querySelector('#Resume').style.color = '#aaaaaa';
+            document.querySelector('#Sosmed').style.color = '#000000';
 
         }
         
