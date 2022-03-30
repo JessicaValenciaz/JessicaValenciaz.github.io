@@ -92,6 +92,13 @@
             '<h2>Do You want to know me more?</h2>'+
            '<h4>I love reading Webtoon</h4>'+
            '<h4>Music is my life</h4>'
+    ]
+    
+    var datasosmed = [
+            '<h1>Social Media</h1>'+
+            '<h2>U can find me in sosmed</h2>'+
+           '<h4>IG: @jessicavalenciatse</h4>'+
+           '<h4>Freelance IG:@laima.design</h4>'
     ];
     </script>
 </head>
@@ -103,6 +110,8 @@
     <div id="Resume" class="tab" onclick="openPage('#F5EEF8', dataresume, 'Resume')">Resume</div>
     <div id="Education" class="tab" onclick="openPage('#FEF5E7', dataedu, 'Education')">Education</div>
     <div id="Interest" class="tab" onclick="openPage('#EAFAF1', datainter, 'Interest')">Interest</div>
+     <div id="Sosmed" class="tab" onclick="openPage('#EAFAF1', datasosmed, 'Sosmed')">Sosmed/div>
+
     
    
     <div id="isi" class="content"><h1>Welcome to my Portofolio</h1><h4>Click on Top Right to see more</h4></div>
@@ -123,17 +132,23 @@
             document.querySelector('#Resume').style.color = '#000000';
             document.querySelector('#Education').style.color = '#aaaaaa';
             document.querySelector('#Interest').style.color = '#aaaaaa';
+            document.querySelector('#Sosmed').style.color = '#aaaaaa';
+
 
         }
         else if (click == 'Education'){
             document.querySelector('#Education').style.color = '#000000';
             document.querySelector('#Resume').style.color = '#aaaaaa';
             document.querySelector('#Interest').style.color = '#aaaaaa';
+            document.querySelector('#Sosmed).style.color = '#aaaaaa';
+
         }
         else {
             document.querySelector('#Interest').style.color = '#000000';
             document.querySelector('#Education').style.color = '#aaaaaa';
             document.querySelector('#Resume').style.color = '#aaaaaa';
+            document.querySelector('#Sosmed').style.color = '#aaaaaa';
+
         }
         
     }
