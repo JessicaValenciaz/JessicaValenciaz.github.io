@@ -81,17 +81,26 @@
 
     var dataedu = [
             '<h1>Education</h1>'+
-           '<h4>SD Sutomo 1 Medan</h4>'+
-           '<h4>SMP Sutomo 1 Medan</h4>'+
-           '<h4>SMA Sutomo 1 Medan</h4>'+
-           '<h4>Universitas Pelita Harapan: Visual Communication Design 2020</h4>'
+           '<h4>2007-2012:SD Sutomo 1 Medan</h4>'+
+           '<h4>2013-2016:SMP Sutomo 1 Medan</h4>'+
+           '<h4>2016-2019:SMA Sutomo 1 Medan</h4>'+
+           '<h4>2020-now :Universitas Pelita Harapan: Visual Communication Design 2020</h4>'
     ]
 
     var datainter = [
             '<h1>Hi</h1>'+
             '<h2>Do You want to know me more?</h2>'+
            '<h4>I love reading Webtoon</h4>'+
+           '<h4>I love Kpop</h4>'+
+           '<h4>I love watching random movie in Youtube</h4>'+
            '<h4>Music is my life</h4>'
+    ]
+    
+    var datasosmed = [
+            '<h1>Social Media</h1>'+
+            '<h2>U can find me in sosmed</h2>'+
+           '<h4>IG: @jessicavalenciatse</h4>'+
+           '<h4>Freelance IG:@laima.design</h4>'
     ];
     </script>
 </head>
@@ -103,6 +112,8 @@
     <div id="Resume" class="tab" onclick="openPage('#F5EEF8', dataresume, 'Resume')">Resume</div>
     <div id="Education" class="tab" onclick="openPage('#FEF5E7', dataedu, 'Education')">Education</div>
     <div id="Interest" class="tab" onclick="openPage('#EAFAF1', datainter, 'Interest')">Interest</div>
+     <div id="Sosmed" class="tab" onclick="openPage('#EAFAF1', datasosmed, 'Sosmed')">Sosmed</div>
+
     
    
     <div id="isi" class="content"><h1>Welcome to my Portofolio</h1><h4>Click on Top Right to see more</h4></div>
@@ -123,17 +134,30 @@
             document.querySelector('#Resume').style.color = '#000000';
             document.querySelector('#Education').style.color = '#aaaaaa';
             document.querySelector('#Interest').style.color = '#aaaaaa';
+            document.querySelector('#Sosmed').style.color = '#aaaaaa';
+
 
         }
         else if (click == 'Education'){
             document.querySelector('#Education').style.color = '#000000';
             document.querySelector('#Resume').style.color = '#aaaaaa';
             document.querySelector('#Interest').style.color = '#aaaaaa';
+            document.querySelector('#Sosmed').style.color = '#aaaaaa';
+
         }
-        else {
-            document.querySelector('#Interest').style.color = '#000000';
+        else if (click == 'Interest'){
             document.querySelector('#Education').style.color = '#aaaaaa';
             document.querySelector('#Resume').style.color = '#aaaaaa';
+            document.querySelector('#Interest').style.color = '#000000';
+            document.querySelector('#Sosmed').style.color = '#aaaaaa';
+
+        }
+        else {
+            document.querySelector('#Interest').style.color = '#aaaaaa';
+            document.querySelector('#Education').style.color = '#aaaaaa';
+            document.querySelector('#Resume').style.color = '#aaaaaa';
+            document.querySelector('#Sosmed').style.color = '#000000';
+
         }
         
     }
