@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>CV Jessica Valencia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        body, html{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+        .tableft{
+            float: left;
+            width: 20%;
+            height: 30px;
+            font-size: 15px;
+            padding: 15px 30px; 
+            color: #666666;
+            
+
+        }
+        .tab{
+            float: right;
+            height: 30px;
+            width: 30px;
+            font-size: 15px;
+            padding: 20px 15px ; 
+            margin-right: 5%;
+            color: #aaaaaa;
+            border: none;
+            outline: none;
+
+
+        }
+
+        .tab:hover {
+            color: black ;
+        }
+
+        .content{
+            width: 100%;
+            float: left;
+            padding: 30px;
+            height: 100%;
+            color: black;
+            background-color: aliceblue;
+
+        }
+
+        
+
+        h4{
+            margin-top: 15px;
+            color: #666666;
+        }
+         
+        h1{
+            margin-bottom: 15px;
+        }
+       
+
+    </style>
+    <script>
+        var dataresume = [
+            '<h1>Resume</h1>'+
+            '<h4>Design Committee in MPC Film Festival (2021) Ig: @mpcfilmfestival</h4>'+
+           '<h4>Secretary in Point Of View : webinar and exhibition (2021) Ig: @dkv.uph</h4>'+
+           '<h4>Mentor in Mentoring Universitas Pelita Harapan (2021-now)</h4>'+
+           '<h4>Manage UPH fotografi instagram (Angkatan 2020 )</h4>'+
+           '<h4>Design Committee in KOMA 2021 (2021) Ig: @komadkv</h4>'+
+           '<h4>Winning in Paper bag Competiton ( 15 Septemer2021 ) ig: @kurasi_lokal</h4>'+
+           '<h4>Designn Coordinator in Ambassadors of UPH (2021-now) Ig : @ambassadorsofuph </h4>'+
+           '<h4>Designer for Momura  brand Ig : Momura.id</h4>'+
+           '<h4>Freelancer Ig : laIma.design</h4>'+
+           '<h4>Publication Coordinator in Typolog 2022 (2022-now) Ig : typolog.dg</h4>'
+    ];
+
+    var dataedu = [
+            '<h1>Education</h1>'+
+           '<h4>SD Sutomo 1 Medan</h4>'+
+           '<h4>SMP Sutomo 1 Medan</h4>'+
+           '<h4>SMA Sutomo 1 Medan</h4>'+
+           '<h4>Universitas Pelita Harapan: Visual Communication Design 2020</h4>'
+    ]
+
+    var datainter = [
+            '<h1>Hi</h1>'+
+            '<h2>Do You want to know me more?</h2>'+
+           '<h4>I love reading Webtoon</h4>'+
+           '<h4>Music is my life</h4>'
+    ];
+    </script>
+</head>
+<body>
+    <div class="tableft">
+        <h2>Jessica Valencia</h2>  
+    </div>
+
+    <div id="Resume" class="tab" onclick="openPage('#F5EEF8', dataresume)">Resume</div>
+    <div id="Education" class="tab" onclick="openPage('#FEF5E7', dataedu)">Education</div>
+    <div id="Interest" class="tab" onclick="openPage('#EAFAF1', datainter)">Interest</div>
+    
+   
+    <div id="isi" class="content"><h1>Welcome to my Portofolio</h1><h4>Click on Top Right to see more</h4></div>
+    
+
+
+    
+
+</body>
+</html>
+
+
+<script>
+    function openPage(color, data) {
+        document.querySelector('#isi').style.backgroundColor = color;
+        document.querySelector('#isi').innerHTML = data
+        
+    }
+    
+
+</script>
+
